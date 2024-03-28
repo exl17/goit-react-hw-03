@@ -1,0 +1,13 @@
+.paragraphe {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.inputForm {
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
