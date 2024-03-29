@@ -19,10 +19,10 @@ const Contact = ({ contact, onDelete }) => {
         <span className={styles.number}>{number}</span>
       </div>
       <div className={styles.buttonContainer}>
-              <button className={styles.deleteButton} onClick={handleDelete}>
+        <button className={styles.deleteButton} onClick={handleDelete}>
           Delete
         </button>
-        </div>
+      </div>
     </li>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import styles from './ContactForm.module.css'; // Підключаємо файли стилів
+import styles from './ContactForm.module.css';
 
 const ContactForm = ({ onSubmit }) => {
   const initialValues = {
@@ -18,7 +18,7 @@ const validationSchema = Yup.object().shape({
     .required('Number is required')
     .min(3, 'Number must be at least 3 characters')
     .max(15, 'Number must not exceed 15 characters')
-    .matches(/^[0-9]+$/, 'Number must contain only digits') // Валідація лише цифр
+    .matches(/^[0-9-]+$/, 'Number must contain only digits and dashes')
 });
 
 

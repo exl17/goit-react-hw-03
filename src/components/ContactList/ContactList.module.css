@@ -1,0 +1,5 @@
+.ContactList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 25px;
+}
